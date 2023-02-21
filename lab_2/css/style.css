@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+section{
+    background-color: #e7dedea2;
+}
+.btn {
+    width: 110px;
+    height: 45px;
+    padding-bottom: 20px;
+}
+p.text-light{
+    width: fit-content;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    background-clip: padding-box;
+    border-radius: 8px;
+}
+.card .d-flex .col-6:nth-child(2){
+    justify-content: right;
+    /* text-align: right; */
+}
+.credit {
+    opacity: 0.7;
+}
