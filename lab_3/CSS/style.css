@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+/* column left */
+.col-left {
+    width: 55%;
+    float: left;
+    border: 1px #ccc solid;
+    background-color: #fff;
+}
+.col-right {
+    width: 45%;
+    float: right;
+    border: 1px #ccc solid;
+    background-color: rgb(204, 204, 204, 0.1);
+}
+.form-row {
+    display: flex;
+    margin-bottom: 16px;
+}
+input[type="text"], input[type="email"]{
+    padding: 12px;
+}
+.form-select {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.form-row .left {
+    padding-right: 6px;
+}
+.form-row .right {
+    padding-left: 6px;
+}
+.btn-continue {
+    background-color: #4c9edc;
+}
+/* select group */
+.select-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.col-3 {
+    width: 32%;
+}
+/* column right */
+.line {
+    border-top: 1px #ccc solid;
+    margin-bottom: 20px;
+}
+.code-submit{
+    margin-bottom: 30px;
+    padding: 12px 24px;
+}
+.col-6 p {
+    margin-bottom: 12px;
+}
+.btn-apply {
+    background-color: #ccc;
+}
+/* text in đậm */
+.text-bold {
+    font-weight: 500;
+}

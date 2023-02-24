@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7edb915b0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/7edb915b0b.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.3.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Form_bootstrap</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form action="#" class="d-flex p-0 my-4" method="post">
+                <!-- column left -->
+                <div class="col-left p-5 pb-3">
+                    <h3>Empire Supply</h3>
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Cart</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Information</li>
+                          <li class="breadcrumb-item active" aria-current="page">Shipping</li>
+                          <li class="breadcrumb-item active" aria-current="page">Payment</li>
+                        </ol>
+                    </nav>
+                    <div class="row">
+                        <div class="col">
+                            <p class="fs-6">Contact Information</p>                      
+                        </div>
+                        <div class="col">
+                            <p class="fs-6 float-end">Already have an ancount?<a href="#" class="text-primary text-decoration-none"> Log in</a></p>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
+                    </div>
+                    <div class="check_box py-3">
+                        <input type="checkbox" name="check_box">
+                        <label for="check" class="form-label px-1"><p> Keep me up to date on news and exclusive offers</p></label>
+                    </div>
+                    <div class="col">
+                        <p class="fs-6">Shipping address</p>                      
+                    </div>
+                    <div class="form-row">
+                        <div class="col-6 left">
+                            <input type="text" name="firstname" class="form-control" placeholder="First name (optional)"/>
+                        </div>
+                        <div class="col-6 right">
+                            <input type="text" name="lastname" class="form-control"  placeholder="Last Name"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" class="form-control" name="address" placeholder="Address">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" class="form-control" name="apartment" placeholder="Apartment, suite, etc. (optional)">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" class="form-control" name="city" placeholder="City">
+                    </div>
+                    <div class="form-row select-group">
+                        <div class="col-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Country/Region</option>
+                                <option value="1">Canada</option>
+                                <option value="2">Nga</option>
+                                <option value="3">Nhật Bản</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Province</option>
+                                <option value="1">Canada</option>
+                                <option value="2">Nga</option>
+                                <option value="3">Nhật Bản</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" class="form-control" name="postal_code" placeholder="Postal Code">
+                        </div>
+                    </div>
+                    <div class="check_box py-3">
+                        <input type="checkbox" name="check_box">
+                        <label for="check" class="form-label px-1"><p>Save this information for next time</p></label>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-4">
+                            <nav style="--bs-breadcrumb-divider: '<';" aria-label="breadcrumb">
+                                <ol class="breadcrumb mt-3">
+                                    <li class="breadcrumb-item" ><a href="#">< Return to cart</a></li>
+                                </ol>
+                             </nav>    
+                         </div>
+                        <div class="col-2"></div>
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-continue text-white p-3 float-end">Continue to Shipping</button>
+                        </div>    
+                    </div>
+                </div>
+                <!-- column-right -->
+                <div class="col-right p-5">
+                    <div class="form-row mb-1">
+                        <div class="col-10">
+                            <img width="70" height="70" src="image/imagee.jpg" alt=""/><span class="text-bold px-2"> Homemade Gin Kit</span>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-bold right-column p-3 mt-2">$70.00</p>
+                        </div>
+                    </div>
+                    <div class="form-row mb-1">
+                        <div class="col-10">
+                            <img width="70" height="70" src="image/imagee.jpg" alt=""/><span class="text-bold px-2"> Homemade Gin Kit</span>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-bold right-column p-3 mt-2">$70.00</p>
+                        </div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col-10">
+                            <img width="70" height="70" src="image/imagee.jpg" alt=""/><span class="text-bold px-2"> Homemade Gin Kit</span>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-bold right-column p-3 mt-2">$70.00</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-row mb-0">
+                        <div class="col-9">
+                            <input type="text" class ="form-control code-submit" name="discount_code" placeholder="Discount code">
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-apply code-submit text-white float-end">Apply</button>
+                        </div>
+                    </div>
+                    <div class="line mb-4"></div>
+                    <div class="form-row mb-0">
+                        <div class="col-6 text-bold"><p>Subtotal</p></div>
+                        <div class="col-6 text-bold"><p class="float-end">$182.0</p></div>
+                    </div>
+                    <div class="form-row mb-0">
+                        <div class="col-6 text-bold"><p>Shipping</p></div>
+                        <div class="col-6 "><p class="float-end">Calculated at next step</p></div>
+                    </div>
+                    <div class="form-row mb-3">
+                        <div class="col-6 text-bold"><p>Taxes (estimated)</p></div>
+                        <div class="col-6 text-bold"><p class="float-end">$21.84</p></div>
+                    </div>
+                    <div class="line mb-4"></div>
+                    <div class="form-row">
+                        <div class="col-8 py-1">
+                            <p class="text-bold fs-5">Total</p>
+                        </div>
+                        <div class="col-2 py-2">
+                            <p>USD</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-bold float-end fs-3">$203.84</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

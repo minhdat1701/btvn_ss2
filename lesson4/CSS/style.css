@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.column-left .input3 {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.column-right .input3 {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+}
+.col-left {
+    width: 50%;
+    float: left;
+    padding-right: 10px;
+}
+.col-right {
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+.form-row {
+    margin-bottom: 20px;
+}
+.column-left h5 {
+    color: #2271dd;
+    font-size: 28px;
+    font-weight: 400;
+}
+.column-right h5 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+}
+.column-right{
+    background-color: #4835D4;
+}
+.column-right .input3{
+    background-color: #4835D4;
+}
+.column-right .input3::placeholder{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+.column-left .input3::placeholder{
+    font-size: 18px;
+    font-weight: 300;
+}
+.check_box {
+    padding-top: 20px;
+}
+.form-label {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+.register {
+    background-color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
