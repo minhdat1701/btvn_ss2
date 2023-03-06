@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: 18px;
+}
+/* chung border-radius = 0 */
+.br0 {
+    border-radius: 0px;
+}
+/* header */
+header a.logo{
+    font-size: 25px;
+    color: rgb(255, 102, 0);
+}
+/* section */
+section {
+    background-color: #eeeeee;
+}
+section .container-fluid .booking-form {
+    background-image: url(../image/london2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.booking-form {
+    position: relative;
+    height: 100vh;
+}
+/* cchưa biết cách căn chỉnh giữa nên để tạm px cụ thể */
+form.bg-light {
+    position: absolute;
+    top: 194px;
+    left: 67px;
+    width: 90%;
+}
+.booking-form .col-6:nth-child(2) {
+    padding-left: 0px;
+    padding-right: 13.5px;
+}
+section .container h3 {
+    font-weight: 400;
+}
+section .container h6 {
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+img {
+    max-width: 100%;
+}
+.img-top {
+    padding-bottom: 6px;
+}
+.img-bottom {
+    padding-top: 6px;
+}
+.img-right {
+    padding-left: 6px;
+}
+.img-left {
+    padding-right: 6px;
+}
+.col-right {
+    padding-left: 6px;
+    padding-right: 0px;
+}
+.col-left {
+    padding-right: 6px;
+    padding-left: 0px;
+}
+/* contact */
+i.bi {
+    padding-right: 20px;
+}
+.input-contact {
+    padding: 15px;
+}
+/* footer */
+.footer {
+    opacity: 0.8;
+}
+#w3 {
+    color: #000;
+}
