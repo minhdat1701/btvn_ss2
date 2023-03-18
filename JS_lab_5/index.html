@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap-5.3.0/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dự báo thời tiết</title>
+</head>
+<body>
+    <section>
+        <div class="container my-4">
+            <div class="row px-5 text-white" id ="list_weather">
+                <!-- start card -->
+                <!-- 
+                <div class="col-3 my-3">
+                    <div class="card px-2">
+                        <div class="col">
+                            <p class="time mb-0 mt-2" >2023-02-17 20:45:00</p>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6">
+                                <p class="temp mb-0 fs-4" >27.50<sup>o</sup>C</p>
+                                <p class="stt mb-5" >broken clouds</p>
+                            </div>
+                            <div class="col-6">
+                                <img src="./image/weather.png" alt="">
+                            </div>
+                        </div>  
+                    </div>
+                </div>        
+                -->
+                <!-- end card -->
+            </div>
+        </div>
+    </section>
+    <!-- Javascript -->
+    <script type="text/javascript">
+        //AJAX
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function(){ 
+            var data = JSON.parse(this.responseText);          
+            console.log(data.list[0]);
+            console.log(data.list[0].weather[0].icon);
+            for (var i = 0; i < data.list.length; i++){
+                var col_3 = `
+                <div class="col-3 my-3">
+                    <div class="card px-2">
+                        <div class="col">
+                            <p class="time mb-0 mt-2">${data.list[i].dt_txt}</p>
+                        </div>
+                        <div class="col d-flex">
+                            <div class="col-6">
+                                <p class="temp mb-0 fs-4">${data.list[i].main.temp}<sup>o</sup>C</p>
+                                <p class="stt mb-5">${data.list[i].weather[0].description}</p>
+                            </div>
+                            <div class="col-6">
+                                <img src="http://openweathermap.org/img/wn/${data.list[i].weather[0].icon}@2x.png" width="100px" height="100px">
+                            </div>
+                        </div>  
+                    </div>
+                </div>   
+                `;
+                document.getElementById('list_weather').innerHTML += col_3;
+                console.log(col_3);
+            }
+        }
+        xhttp.open("GET", "https://api.openweathermap.org/data/2.5/forecast?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric");
+        xhttp.send();
+        /*
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function(){ //callback function
+            //những việc sẽ làm khi nhận đc dữ liệu trả về
+            var rs = this.responseText;
+            var data = JSON.parse(rs);         
+            var products = data.products;   
+            console.log(products);
+            for (var i = 0; i < products.length; i++) {
+                var col3 = `<div class="col-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="${products[i].thumbnail}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">${products[i].title}</h5>
+                            <p class="card-text">${products[i].description}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>`;   
+                document.getElementById("list").innerHTML += col3;                             
+            }
+        }
+        xhttp.open("GET", "https://dummyjson.com/products?limit=10");
+        xhttp.send();
+        */
+    </script>
+</body>
+</html>

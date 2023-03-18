@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* background: url(../image/bg-clouds.jpg) border-box no-repeat; */
+    background-color: rgb(0, 121, 149);
+}
+.card {
+    background: rgb(135, 161, 181);
+    border-radius: 0px;
+}
+.time {
+    font-size: 16px;
+    font-weight: 500;
+}
+.temp{
+    font-weight: 600;
+}
+.stt {
+    font-size: 14px;
+}
