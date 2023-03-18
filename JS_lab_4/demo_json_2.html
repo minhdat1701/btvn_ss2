@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7edb915b0b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendors/bootstrap-5.3.0/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>JS_3</title>
+</head>
+
+<body>
+    <section>
+        <div class="container my-5">
+            <div class="row pt-4">
+                <!-- col left -->
+                <div class="col-3">
+                    <div class="location d-flex justify-content-center align-items-center mb-4">
+                        <div class="col-1">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <div class="col-11 px-4">
+                            <h3 id="position">Seattle</h3>
+                        </div>
+                    </div>
+                    <div class="time d-flex justify-content-center align-items-center mb-4">
+                        <div class="col-1"></div>
+                        <div class="col-11 px-4">
+                            <p class="m-0">September 15</p>
+                            <p class="">Monday</p>
+                        </div>
+                    </div>
+                    <div class="temperature d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-thermometer-half fs-1"></i>
+                        </div>
+                        <div class="col-11 px-2">
+                            <h1 id="temp" class="px-3">25<sup>o</sup></h1>
+                        </div>
+                    </div>
+                    <div class="temperature d-flex justify-content-center align-items-center">
+                        <div class="col-1"></div>
+                        <div class="col-11 px-4">
+                            <p id="feels_like">Feels like 23<sup>o</sup></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- col mid -->
+                <div class="col-6 text-center">
+                    <img src="image/weather (1).jpg" alt=""  class="img-fluid">
+                    <p id="weather" class="text-center mt-2">Cloudy</p>
+                </div>
+                <!-- col right -->
+                <div class="col-3 px-4">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <h3>
+                                <i class="bi bi-three-dots"></i>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-sunrise"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="mb-1 mx-3" id="sun_rise">Sunrise 7:00</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-sunset"></i> 
+                        </div>
+                        <div class="col-11">
+                            <p class="mb-1 mx-3" id="sun_set">Sunset 19:20</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="mb-1 mx-3" id="humidity"> 60%</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-wind"></i> 
+                        </div>
+                        <div class="col-11">
+                            <p class="mb-1 mx-3" id="gust">10km/h</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-compass"></i> 
+                        </div>
+                        <div class="col-11">
+                            <p class="mb-1 mx-3" id="deg">North-East</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="col-1">
+                            <i class="bi bi-arrow-up"></i>
+                        </div>
+                        <div class="col-11">
+                            <p class="mb-1 mx-3" id="pressure"> 1023.0 mb</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row py-3 mx-2 mt-5 border-radius-1" style="background: #00c9f1;">
+                <div class="col text-center">
+                    <img src="image/sun.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>+25<sup>o</sup></b></p>
+                    <p class="date">Sunday</p>
+                </div>
+                <div class="col text-center">
+                    <img src="image/mon.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>+19<sup>o</sup></b></p>
+                    <p class="date">Monday</p>
+                </div>
+                <div class="col text-center">
+                    <img src="image/tue.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>+14<sup>o</sup></b></p>
+                    <p class="date">Tuesday</p>
+                </div>
+                <div class="col text-center">
+                    <img src="image/wed.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>+7<sup>o</sup></b></p>
+                    <p class="date">Wednesday</p>
+                </div>
+                <div class="col text-center">
+                    <img src="image/thur.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>-3<sup>o</sup></b></p>
+                    <p class="date">Thurday</p>
+                </div>
+                <div class="col text-center">
+                    <img src="image/fri.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>0<sup>o</sup></b></p>
+                    <p class="date">Friday</p>
+                </div>
+                <div class="col text-center">
+                    <img src="image/sat.jpg" alt="" class="img-fluid mb-3">
+                    <p class="tem m-0"><b>+5<sup>o</sup></b></p>
+                    <p class="date">Saturday</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        /*
+        {   
+            "coord":{"lon":105.8412,"lat":21.0245},
+            "weather": [{"id":803,"main":"Clouds","description":"broken clouds","icon":"04n"}],
+            "base":"stations",
+            "main":{"temp":23,"feels_like":23.31,"temp_min":23,"temp_max":23,"pressure":1016,"humidity":75,"sea_level":1016,"grnd_level":1014},
+            "visibility":10000,"wind":{"speed":4.55,"deg":147,"gust":9.54},
+            "clouds":{"all":54},
+            "dt":1678976349,
+            "sys":{"type":1,"id":9308,"country":"VN","sunrise":1678921501,"sunset":1678964763},
+            "timezone":25200,
+            "id":1581130,
+            "name":"Hanoi",
+            "cod":200
+        }
+        */
+        //AJAX
+        var xhttp = new XMLHttpRequest();
+        xhttp.onload = function(){ 
+            var data = JSON.parse(this.responseText);          
+            console.log(data);
+            document.getElementById('position').innerText = data.name;
+            document.getElementById('temp').innerHTML = data.main.temp + `<sup>o</sup>`;
+            document.getElementById('feels_like').innerHTML = `Feels like ` + data.main.feels_like + `<sup>o</sup>`;
+            //"sys":{"type":1,"id":9308,"country":"VN","sunrise":1678921501,"sunset":1678964763},
+            //document.getElementById('sun_rise').innerHTML = `Sunrise ${data.sys.sunrise}`;
+            //document.getElementById('sun_set').innerHTML = `Sunset ${data.sys.sunset}`;
+            document.getElementById('humidity').innerHTML = data.main.humidity+"%";
+            document.getElementById('gust').innerHTML = data.wind.gust+" km/h";
+            document.getElementById('pressure').innerText = data.main.pressure+" mb";
+            document.getElementById('weather').innerText = data.weather[0].main;
+        }
+        xhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric");
+        xhttp.send();
+        
+    </script>
+</body>
+
+</html>
