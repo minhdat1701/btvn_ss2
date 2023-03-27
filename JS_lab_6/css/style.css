@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.box-product {
+    width: 100%;
+    padding: 0px 50px;
+}
+.mar-right {
+    margin-right: 30px;
+}
+.mar-right-2 {
+    margin-left: 20px;
+}
+.col-4 {
+    width: 30%;
+}
+.title-price .col-6 p {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text {
+    font-size: 16px;
+}
+.line {
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
